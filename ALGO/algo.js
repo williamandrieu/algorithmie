@@ -140,41 +140,41 @@
 
 
 
-// f = 7;
-// c = 1;
+f = 7;
+c = 1;
 
-// for (var i = 7; i >= 0; i--) {
+for (var i = 7; i >= 0; i--) {
 	
-// 	g = f % i;
-// 	console.log(i);
-// 	console.log("g>>>",g);
+	g = f % i;
+	console.log(i);
+	console.log("g>>>",g);
 
-// 	if ((f % 2) == 0) { c = 12;}
+	if ((f % 2) == 0) { c = 12;}
 
-// 	if (!(g == 0) && f == (f || !1)){
-// 		c += 1;
-// 		console.log("c=o",c)
-// 	}
+	if (!(g == 0) && f == (f || !1)){
+		c += 1;
+		console.log("c=o",c)
+	}
 
-// 	if (i <= 1 &&  g == 0){
+	if (i <= 1 &&  g == 0){
 		
-// 		if (f == i){
-// 			c = 1;
-// 			console.log("ca marche aussi la ")
-// 		} else {
+		if (f == i){
+			c = 1;
+			console.log("ca marche aussi la ")
+		} else {
 
-// 		c = 0;
-// 		console.log("ca marche")
-// 	}
+		c = 0;
+		console.log("ca marche")
+	}
 
-// 	}
-// 	console.log("c'est ",c)
-// }
-// console.log("c>>",c);
-// if (c <= 2) {
+	}
+	console.log("c'est ",c)
+}
+console.log("c>>",c);
+if (c <= 2) {
 
-// 	console.log(f , " est un nombre premier")
-// }
+	console.log(f , " est un nombre premier")
+}
 
 
 

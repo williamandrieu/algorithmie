@@ -1,118 +1,132 @@
 
-/*
-var morpion = [
-	['A', 'B', 'C'],
-	['D', 'E', 'F'],
-	['G', 'H', 'I']
-];
+var morpion1 = ['A', 'A', 'A', 'D', 'E', 'F', 'G', 'H', 'I'];
 
-_____________
-|   |   |   |
-| A | B | C |
-|___|___|___|
-|   |   |   |
-| D | E | F |
-|___|___|___|
-|   |   |   |
-| G | H | I |
-|___|___|___|
+// var morpion2 = [
+// 	['A', 'B', 'C'],
+// 	['D', 'E', 'F'],
+// 	['G', 'H', 'I']
+// ];
 
-console.log(morpion[0][0]);
-// => A
-console.log(morpion[2][2]);
-// => I
+// _____________
+// |   |   |   |
+// | A0| B1| C2|
+// |___|___|___|
+// |   |   |   |
+// | D3| E4| F5|
+// |___|___|___|
+// |   |   |   |
+// | G6| H7| I8|
+// |___|___|___|
 
-// A
-document.getElementById('morpion').children[0].children[0].innerHTML = 'X';
-// I
-document.getElementById('morpion').children[2].children[2].innerHTML = 'X';
-*/
-var morpion = [[],[],[]];
-var turn = 'X';
-var v = "X"
 
-function play(x, y) {
-	if (!morpion[x][y]) {
-		morpion[x][y] = turn;
-		document.getElementById('morpion').children[x].children[y].innerHTML = turn;
-		verify(v, x ,y);
-		if (turn == 'X') {
-			turn = 'O';
-			v = "O"
+
+// console.log(morpion1[0]);
+// // => A
+// console.log(morpion1[8]);
+// // => I
+
+// console.log(morpion2[0][0]);
+// // => A
+// console.log(morpion2[2][2]);
+// // => I
+
+
+
+if (morpion2[0][0] == "A") {
+	if (morpion2[1][0] == "B") {
+		
+		if (morpion2[2][0] == "C") {
+			
+			console.log("abc","c'est gagne")
 		}
-		else {
-			turn = 'X';
-			v = "X"
+	}
+}
+
+if (morpion2[3][0] == "D") {
+	if (morpion2[4][0] == "E") {
+		
+		if (morpion2[5][0] == "F") {
+			
+			console.log("def","c'est gagne")
 		}
-		is_win(x,y);
 	}
 }
 
-function restart() {
-	morpion = [[],[],[]];
-	turn = 'X';
-	for (var x = 0; x <= 2; x++) {
-		for (var y = 0; y <= 2; y++) {
-			document.getElementById('morpion').children[x].children[y].innerHTML = '';
+
+if (morpion2[6][0] == "G") {
+	if (morpion2[7][0] == "H") {
+		
+		if (morpion2[8][0] == "I") {
+			
+			console.log("ghi","c'est gagne")
 		}
 	}
-	document.getElementById('infos').children[0].innerHTML = '';
-}
-
-// Fonction de vérification de victoire
-function is_win() {
-	document.getElementById('infos').children[0].innerHTML = '';
 }
 
 
-function verify(v, x, y){
 
-
-
-if ((morpion[0][0] == v) && (morpion[0][1] == v) && (morpion[0][2] == v)) {
-	
-			console.log("abc","c'est gagne");
-}
-if ((morpion[1][0] == v) && (morpion[1][1] == v) && (morpion[1][2] == v)) {
-	
-			console.log("DEF","c'est gagne");
-}
-if ((morpion[2][0] == v) && (morpion[2][1] == v) && (morpion[2][2] == v)) {
-	
-			console.log("GHI","c'est gagne");		
-}
 //=====================================================================================
 
-if ((morpion[0][0] == v) && (morpion[1][0] == v) && (morpion[2][0] == v)) {
-	
-			console.log("ADG","c'est gagne");		
-}
-if ((morpion[0][1] == v) && (morpion[1][1] == v) && (morpion[2][1] == v)) {
-	
-			console.log("BEH","c'est gagne");	
-}
-if ((morpion[0][2] == v) && (morpion[1][2] == v) && (morpion[2][2] == v)) {
-	
-			console.log("CFI","c'est gagne");		
-}
-//================D I A G O N A L E==============================================================
 
-if ((morpion[0][0] == v) && (morpion[1][1] == v) && (morpion[2][2] == v)) {
-	
-			console.log("AEI","c'est gagne");	
-}
-if ((morpion[0][2] == v) && (morpion[1][1] == v) && (morpion[2][0] == v)) {
-	
-			console.log("CEG","c'est gagne");	
+
+if (morpion2[0][0] == "A") {
+	if (morpion2[3][0] == "B") {
+		
+		if (morpion2[6][0] == "C") {
+			
+			console.log("ADG","c'est gagne")
+		}
+	}
 }
 
-
-
-
-
-
+if (morpion2[1][0] == "D") {
+	if (morpion2[4][0] == "E") {
+		
+		if (morpion2[7][0] == "F") {
+			
+			console.log("BEH","c'est gagne")
+		}
+	}
 }
 
-// faire une var pour morpion[][]
+
+if (morpion2[2][0] == "G") {
+	if (morpion2[5][0] == "H") {
+		
+		if (morpion2[8][0] == "I") {
+			
+			console.log("CFI","c'est gagne")
+		}
+	}
+}
+
+
+//==============================================================================
+
+
+
+
+if (morpion2[0][0] == "A") {
+	if (morpion2[4][0] == "B") {
+		
+		if (morpion2[8][0] == "C") {
+			
+			console.log("diag1","c'est gagne")
+		}
+	}
+}
+
+if (morpion2[2][0] == "D") {
+	if (morpion2[4][0] == "E") {
+		
+		if (morpion2[6][0] == "F") {
+			
+			console.log("diag2","c'est gagne")
+		}
+	}
+}
+
+
+
 
 
