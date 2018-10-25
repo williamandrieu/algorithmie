@@ -113,54 +113,33 @@ function is_win(x, y, d) {
 function verify(x,y,t,d) {
 c = y + 2;
 b = y + 3;
+//&& (y + i <= 5)&& (x + i <= 6)
 
-//console.log(power4[y])
-//console.log("power4[c][x]",d)
-// if (y > 3) {
-
-//    }else {
-
- 
-// 	if (power4[2][x] == "R")   {
-// 		console.log(power4[y++][x]);
-// 		if (power4[y++][x] == "R") {
-// 			if (power4[c][x] == "R") {
-// 				if(power4[b][x] == "R") {
-// 					console.log("Rouge gagne")
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-/*if (y > 3) {
-   }else {
-	if (power4[2][x] == d)   {
-		
-		if (power4[y++][x] == d) {
-			if (power4[c][x] == d) {
-				if(power4[b][x] == d) {
-					console.log(d + " gagne")
-				}
-			}
-		}
-	}
-}*/
 var count = 1;
+var coun = 1;
+
 for (var i = 1; i <= 3; i++) {
   
-	if ((x - i >= 6) && (y - i >= 0)) {
+  	if ((x - i >= 0) && (x + i <= 6) && (y - i >= 0)) {
+		//console.log("yeah")
+		if (power4[y][x] == power4[y-i][x-i]) {
+			count++;
+			//console.log(count);
+			//console.log("Diago");
+		}
+	}
+	if ((x - i >= 0)  && (y - i >= 0)) {
 		console.log("yeah")
 		if (power4[y][x] == power4[y-i][x+i]) {
 			count++;
 			console.log(count);
-			console.log("oooo");
+			console.log("Diago");
 		}
 	}
 
 	if (y + i <= 5) {
 		if (power4[y][x] == power4[y+i][x]) {
-			console.log("oooo");
+			console.log("bas");
 			count++;
 			console.log(count);
 		}
@@ -168,14 +147,14 @@ for (var i = 1; i <= 3; i++) {
 
   	if (x - i >= 0) {
 		if (power4[y][x] == power4[y][x-i]) {
-			console.log("oooo");
-			count++;
+			console.log("droite");
+			coun++;
 			console.log(count);
 		}
 	}
 	if (x - i <= 6) {
 		if (power4[y][x] == power4[y][x+i]) {
-			console.log("oooo++6");
+			console.log("Gauche");
 			count++;
 			console.log(count);
 		}
@@ -183,9 +162,15 @@ for (var i = 1; i <= 3; i++) {
 	if (count >= 4) {
 		console.log(d + " GAGNE")
 		win = power4[y][x];
-		break;
+		//break;
 	}
+	// if (coun >= 4) {
+	// 	console.log(d + " GAGNE")
+	// 	win = power4[y][x];
+	// 	//break;
+	// }
 }
+
 
 }
 
@@ -250,4 +235,35 @@ for (var i = 1; i <= 3; i++) {
 //    	console.log(power4[y+1][x])
 //    }
 
+//console.log(power4[y])
+//console.log("power4[c][x]",d)
+// if (y > 3) {
 
+//    }else {
+
+ 
+// 	if (power4[2][x] == "R")   {
+// 		console.log(power4[y++][x]);
+// 		if (power4[y++][x] == "R") {
+// 			if (power4[c][x] == "R") {
+// 				if(power4[b][x] == "R") {
+// 					console.log("Rouge gagne")
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// if (y > 3) {
+//    }else {
+// 	if (power4[2][x] == d)   {
+		
+// 		if (power4[y++][x] == d) {
+// 			if (power4[c][x] == d) {
+// 				if(power4[b][x] == d) {
+// 					console.log(d + " gagne")
+// 				}
+// 			}
+// 		}
+// 	}
+// }
