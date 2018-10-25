@@ -7,14 +7,7 @@ var searched = [];
 function plusPetitElement(elements) {
 	var result = 1000000;;
 	// Ne rien modifier au dessus de ce commentaire
-	
-	var result = elements[0];
-	for (var i = elements.length - 1; i >= 0; i--) {
-		if (elements[i] < result){
-			result = elements[i];
-			 
-		}
-	}	
+
 	// Ne rien modifier au dessous de ce commentaire
 	return result;
 }
@@ -23,13 +16,7 @@ function plusPetitElement(elements) {
 function plusGrandElement(elements) {
 	var result = 900000;
 	// Ne rien modifier au dessus de ce commentaire
-	
-		var result = elements[0];
-		for (var i = elements.length - 1; i >= 0; i--) {
-			if (elements[i] > result){
-				result = elements[i];
-		}
-	}
+
 	// Ne rien modifier au dessous de ce commentaire
 	return result;
 }
@@ -37,19 +24,7 @@ function plusGrandElement(elements) {
 // Fonction qui recherche les éléments du tableau search dans le tableau elements
 function chercherElement(search, elements) {
 	// Ne rien modifier au dessus de ce commentaire
-	for (var i = elements.length - 1; i >= 0; i--) {
-		for (var z = 0; z < search.length; z++) {
-		
-		if (elements[i] != search[z]){
-			
-			 
-		} 	else if (elements[i] == search[z]){
-				ajouteSearched(search[i]);
-			}
-		}
-	}
-
-	
+	ajouteSearched(42);
 	// Ne rien modifier au dessous de ce commentaire
 }
 
@@ -57,9 +32,7 @@ function chercherElement(search, elements) {
 function additionnerElement(elements) {
 	var result = 0;
 	// Ne rien modifier au dessus de ce commentaire
-		for (var i = elements.length - 1; i >= 0; i--) {
-			result += elements[i];
-		}
+
 	// Ne rien modifier au dessous de ce commentaire
 	return result;
 }
