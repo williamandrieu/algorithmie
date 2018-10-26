@@ -8,7 +8,7 @@ function plusPetitElement(elements) {
 	var result = 1000000;;
 	// Ne rien modifier au dessus de ce commentaire
 	
-	var result = elements[0];
+
 	for (var i = elements.length - 1; i >= 0; i--) {
 		if (elements[i] < result){
 			result = elements[i];
