@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{A001107F-1001-4ED7-A513-4D015EEC70C4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TD_console/TD5.cs">
+    <Files>
+      <File FileName="TD_console/Program.cs" Line="12" Column="13" />
+      <File FileName="TD_console/TD1.cs" Line="224" Column="72" />
+      <File FileName="TD_console/TD2.cs" Line="274" Column="22" />
+      <File FileName="TD_console/TD4.cs" Line="538" Column="59" />
+      <File FileName="TD_console/TD5.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TD_console" expanded="True">
+            <Node name="TD_console" expanded="True">
+              <Node name="TD5.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TD__console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

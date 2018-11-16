@@ -1,0 +1,6 @@
+/Users/andrieuwilliam/Projects/Projet/Projet/bin/Debug/Projet.exe
+/Users/andrieuwilliam/Projects/Projet/Projet/bin/Debug/Projet.pdb
+/Users/andrieuwilliam/Projects/Projet/Projet/obj/x86/Debug/Projet.csprojAssemblyReference.cache
+/Users/andrieuwilliam/Projects/Projet/Projet/obj/x86/Debug/Projet.csproj.CoreCompileInputs.cache
+/Users/andrieuwilliam/Projects/Projet/Projet/obj/x86/Debug/Projet.exe
+/Users/andrieuwilliam/Projects/Projet/Projet/obj/x86/Debug/Projet.pdb

@@ -1,0 +1,6 @@
+/Users/andrieuwilliam/Projects/TD_console/TD_console/bin/Debug/TD_console.exe
+/Users/andrieuwilliam/Projects/TD_console/TD_console/bin/Debug/TD_console.pdb
+/Users/andrieuwilliam/Projects/TD_console/TD_console/obj/x86/Debug/TD_console.csproj.CoreCompileInputs.cache
+/Users/andrieuwilliam/Projects/TD_console/TD_console/obj/x86/Debug/TD_console.exe
+/Users/andrieuwilliam/Projects/TD_console/TD_console/obj/x86/Debug/TD_console.pdb
+/Users/andrieuwilliam/Projects/TD_console/TD_console/obj/x86/Debug/TD_console.csprojAssemblyReference.cache
